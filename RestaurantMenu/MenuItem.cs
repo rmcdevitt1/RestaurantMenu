@@ -19,7 +19,15 @@ namespace RestaurantMenu
             IsNew = isNew;
         }
 
+        public void PrintItem()
+        {
+            Console.WriteLine($"{this.Name}..............{this.Price.ToString()}\n{this.Description}");
+        }
 
+        public override string ToString()
+        {
+            return ($"{this.Name}..............{this.Price}\n{this.Description}");
+        }
 
     }
 
