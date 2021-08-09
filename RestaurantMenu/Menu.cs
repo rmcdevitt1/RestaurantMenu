@@ -18,6 +18,7 @@ namespace RestaurantMenu
 
         public Menu()
         {
+            MenuItems = new List<MenuItem>();
         }
 
         public object AddMenuItem(object menuItem)
@@ -34,11 +35,15 @@ namespace RestaurantMenu
 
         public void PrintMenu()
         {
+            Console.WriteLine("Restaurant Name: " + this.RestaurantName);
+            Console.WriteLine("Menu Date: " + this.LastTimeUpdated.ToString("MMMM dd, yyyy"));
+            Console.WriteLine("");
             foreach (MenuItem m in MenuItems)
             {
                 m.PrintItem();
 
             }
+
         }
 
     }

@@ -21,13 +21,10 @@ namespace RestaurantMenu
 
         public void PrintItem()
         {
-            Console.WriteLine($"{this.Name}..............{this.Price.ToString()}\n{this.Description}");
+            Console.WriteLine($"{this.Name}....... {this.Price.ToString()} ~~ {this.Description}");
         }
 
-        public override string ToString()
-        {
-            return ($"{this.Name}..............{this.Price}\n{this.Description}");
-        }
+      
 
     }
 
